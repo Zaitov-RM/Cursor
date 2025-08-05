@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/configuration" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise/current-entry" xmlns:lf="http://v8.1c.ru/8.2/managed-application/condition" xmlns:style="http://v8.1c.ru/8.1/data/ui/style-collection" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Processing uuid="12345678-1234-1234-1234-123456789012">
+		<Properties>
+			<Name>ОбработкаЗагрузкаДисконтныхКарт</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка дисконтных карт из Excel</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Обработка для загрузки дисконтных карт из Excel файла</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<DefaultRecordForm>ProcessingForm.Форма</DefaultRecordForm>
+			<DefaultRecordFormManaged>ProcessingForm.Форма</DefaultRecordFormManaged>
+		</Properties>
+		<ChildObjects>
+			<Form uuid="87654321-4321-4321-4321-210987654321">
+				<Properties>
+					<Name>Форма</Name>
+					<Type>ManagedForm</Type>
+					<UsePurposes>
+						<v8:item>Input</v8:item>
+					</UsePurposes>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="11111111-1111-1111-1111-111111111111">
+						<Properties>
+							<Name>ПутьКФайлу</Name>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+							</Type>
+							<EditType>InputField</EditType>
+							<DataPath>Object.ПутьКФайлу</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Путь к Excel файлу</v8:content>
+								</v8:item>
+							</ToolTip>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="22222222-2222-2222-2222-222222222222">
+						<Properties>
+							<Name>КоличествоСтрок</Name>
+							<Type>
+								<v8:Type>xs:number</v8:Type>
+							</Type>
+							<EditType>InputField</EditType>
+							<DataPath>Object.КоличествоСтрок</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество обработанных строк</v8:content>
+								</v8:item>
+							</ToolTip>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="33333333-3333-3333-3333-333333333333">
+						<Properties>
+							<Name>СтатусОбработки</Name>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+							</Type>
+							<EditType>InputField</EditType>
+							<DataPath>Object.СтатусОбработки</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статус обработки</v8:content>
+								</v8:item>
+							</ToolTip>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</Form>
+		</ChildObjects>
+	</Processing>
+</MetaDataObject> 
